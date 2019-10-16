@@ -7,7 +7,6 @@ exports.up = function(knex) {
       .notNullable()
       .unique();
     users.string('password', 128).notNullable();
-    users.string('role', 64).defaultTo('regular user')
   });
 };
 
